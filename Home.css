@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Rancho&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Andada+Pro&family=Nunito:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --main-color:rgb(228, 228, 228);
+    --box-shadow: 2px 2px 10px 14px red;
+}
+body{
+    position: relative;
+    width: 100%;
+    background-color: #fff;
+}
+section{
+    height: 100vh;
+}
+/*01-MainInterface Section 01*/
+.MainInterface_Sec01{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--main-color);
+}
+/*01.1 header Logo set*/
+header{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    padding: 0 50px 0 10px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    z-index: 1;
+    /* background-color: #d3d3d3; */
+}
+/*01.1.1 Navigation logo*/
+.headerLogo{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 80px;
+    /* background-color: rgb(156, 156, 156); */
+    }
+    .headerLogo img{
+        width: 100%;
+        height: 100%;
+    }
+/*01.1.2 Navigation*/
+.MainInterface_Sec01 nav{
+    position: relative;
+    width: auto;
+    height: 100%;
+    /* background-color: rgb(255, 163, 243); */
+    display: flex;
+    align-items: center;
+}
+    .MainInterface_Sec01 nav ul{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        /* background-color: rgb(255, 241, 179); */
+    }
+        .MainInterface_Sec01 nav ul li{
+            position: relative;
+            align-content: center;
+            height: 100%;
+            list-style: none;
+            /* background-color: #d43b35; */
+            align-self: center;
+        }
+            .MainInterface_Sec01 nav ul li a{
+                position: relative;
+                height: 100%;
+                margin: 0 10px 0 10px;
+                padding: 10px 20px;
+                text-decoration: none;
+                font-size: 16px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                color:rgb(96, 97, 100);
+                /* background-color: rgb(242, 228, 255);                 */
+            }
+            .MainInterface_Sec01 nav ul li .dropdown_menu {
+                position: absolute;
+                top: 70px;
+                height: auto;
+                display: block;
+                visibility: hidden;
+                text-align: center;
+                /* background-color: rgb(121, 195, 218); */
+                border-radius: 10px;
+                transition: all .0s;
+            }
+                .MainInterface_Sec01 nav ul li .dropdown_menu li{
+                position: relative;
+                display: block;
+                height: auto;
+                padding: 3px 0 20px 0;
+                /* background-color: #a8a8a8; */
+                /* border-radius: 100px; */
+            }
+                .MainInterface_Sec01 nav ul li .dropdown_menu li a{
+                position: relative;
+                margin: 0 5px 0 5px;
+                padding: 10px 24px;
+                text-decoration: none;
+                font-size: 16px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                color:rgb(40, 120, 224);
+                background-color: rgba(255, 255, 255, 0.281); 
+            }
+            .MainInterface_Sec01 nav ul li .dropdown_menu li a:hover{
+                background-color: rgb(255, 255, 255);
+            }
+            .MainInterface_Sec01 nav ul li a:hover{
+                background-color: rgb(212, 255, 228);
+                transition: .2s;
+            }
+            .MainInterface_Sec01 nav ul li:hover .dropdown_menu{
+                display: block;
+                visibility:visible;
+            }
+/*01.1.3 NavIcon*/
+.header_control_icon{
+    position: relative;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: blue; */
+}
+/*01.1.3.1 NavIcon_sub*/
+    .header_icon_sub{
+        position: relative;
+        width: 100%;
+        height: 30px;
+        padding: 0 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgb(7, 63, 49);
+        border-radius: 60px;
+        cursor: pointer;
+        transition: .3s;
+    }
+    .header_icon_sub:hover{
+        background-color:rgb(31, 78, 48);
+        
+    }
+        .header_icon_sub div:hover{
+            transition: .3s;
+            transform: translatey(-1px);
+            /* transform: scale(1.1); */
+        }
+            .header_icon_sub div i{
+                
+                font-size: 18px;
+                color:rgb(255, 255, 255)
+            }
+            .header_icon_sub div:hover i{
+                color: red;
+                transition: .3s;
+            }
+   
+.containt{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    width: 50%;
+    height: 50%;
+    transform: translate(-50%, -50%);
+    /* background-color: red; */
+}
+.texts{
+    position: relative;
+    top: 10%;
+    left: 45%;
+    top: 50%;
+    transform: translateX(-50%, 50%);
+}
+#www{
+    position: relative;
+    font-size: 50px;
+}
+
+
+/*01.1.3.2 NavIcon_menu*/
+.header_icon_Menu{
+    display: none;
+}
+    .header_icon_Menu i{
+        font-size: 18px;
+        color:rgb(0, 110, 255)
+    }
+@media (max-width:800px){
+
+    .MainInterface_Sec01 nav{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 50%;
+        transform: translateX(-150%);
+        transition: 1s;
+        background-color: rgb(255, 255, 255);
+    }
+    .MainInterface_Sec01 nav ul{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        /* background-color: rgb(255, 208, 0); */
+    }
+    .MainInterface_Sec01 .newcdd{
+        transform: translateX(-50%);
+        transition: 1s;    
+    }
+    .MainInterface_Sec01 nav ul li:hover .dropdown_menu{
+        display: none;
+        visibility:hidden;
+    }
+    .Nav_Move i{
+        color: red;
+    }
+    .MainInterface_Sec01 nav ul{
+        position: relative;
+        top: 0px;
+        width: 100%;
+        height:50%;
+        flex-direction: column;
+        /* justify-content:center;
+        align-items: center; */
+        /* background-color:aqua; */
+    }
+    .MainInterface_Sec01 nav ul::after{
+        content: '© 2024 devvs -   All Rights Reserved.';
+        position: absolute;
+        bottom: -100px;
+        font-size: 10px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;   
+    }
+    .MainInterface_Sec01 nav ul li{
+        margin: 20px;
+    }
+    .header_icon_sub div i{
+                
+        font-size: 18px;
+        color:rgb(252, 0, 0)
+    }
+    .header_icon_Menu{
+        display: block;
+    }
+    header{
+        padding: 0 10px 0 10px;
+        position: fixed;
+        background-color: #fff;
+    }
+    .header_icon_sub{
+        background-color:unset;
+    }
+    .headerLogo{
+        z-index: 2;
+    }
+    .header_control_icon{
+        z-index: 2;
+    }
+    .MainInterface_Sec01 nav ul li .dropdown_menu {
+        display: none;
+    }
+    
+
+    .header_icon_sub:hover{
+        background-color:unset;
+        
+    }
+        .header_icon_sub div:hover{
+            transition: .3s;
+            transform: translatey(-1px);
+            /* transform: scale(1.1); */
+        }
+            .header_icon_sub div i{
+                
+                font-size: 20px;
+                color:rgb(71, 72, 73)
+            }
+            .header_icon_sub div:hover i{
+                color: red;
+                transition: .3s;
+            }
+            .header_icon_Menu i{
+                margin:2px;
+                font-size: 25px;
+                color:rgb(0, 110, 255)
+            }
+}
+
+
+
+
+
+/*01.2.0 Bg*/
+.img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* background-color: #fff; */
+    z-index: 0;
+    overflow-x: hidden;
+}
+.img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
