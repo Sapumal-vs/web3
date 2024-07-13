@@ -256,8 +256,8 @@ header{
         background-color: #fff;
         padding: 0 30px 0 10px;
         box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.568);
-    }
-    }
+    } 
+    
     .MainInterface_Sec01 nav{
         position: fixed;
         width: 100%;
@@ -342,7 +342,7 @@ header{
             }
 
 
-
+        }
 
 
 
