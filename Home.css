@@ -315,6 +315,7 @@ header{
         user-select:none;
         border-radius: 0px;
         width: auto;
+        -webkit-tap-highlight-color: transparent;
     }
     .header_icon_sub:hover{
         background-color:unset;  
@@ -323,13 +324,12 @@ header{
         transition: 0s;
         transform: translatey(0px);
         transform: scale(1);
-        /* background-color: chartreuse; */
+        background-color: unset;
     }
     .header_icon_sub div i{
         font-size: 18px;
         color:rgb(8, 47, 83);
         padding: 10px;
-        background-color: cadetblue;
         background-color: unset;
     }
             .header_icon_sub div:hover i{
@@ -342,7 +342,8 @@ header{
         margin: 0px;
         padding: 0px;
         /* background-color: #e4abab; */
-        cursor: pointer;        
+        cursor: pointer;  
+        -webkit-tap-highlight-color: transparent;      
     }
     .header_icon_Menu i{
         font-size: 25px;
@@ -352,6 +353,7 @@ header{
     }       
     .headerLogo{
         z-index: 2;
+        -webkit-tap-highlight-color: transparent;
     }
 
 
