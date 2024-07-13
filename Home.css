@@ -97,6 +97,7 @@ header{
     transition: .4s;
     font-weight: 600;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    -webkit-tap-highlight-color: transparent;
 }
 .nav_ul li a i{
     font-size: 14px;
