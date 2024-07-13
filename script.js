@@ -5,10 +5,10 @@
 //     })
 
 var Resp_menu_js = document.getElementById('Resp_menu');
-var nvmm = document.getElementsByTagName('nav')[0];
+var responsivenave = document.getElementsByTagName('nav')[0];
 Resp_menu_js.addEventListener('click', function(){
     Resp_menu_js.classList.toggle('Nav_Move');
-    nvmm.classList.toggle('newcdd');
+    responsivenave.classList.toggle('responsive_nave');
     })
    
 
