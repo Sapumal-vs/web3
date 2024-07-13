@@ -156,7 +156,9 @@ header{
         background-color: rgb(255, 142, 142);
     }
 
-
+.Nav_Move i{
+    color: red;
+}
 
 
 
@@ -359,7 +361,7 @@ header{
     .header_icon_Menu i{
         font-size: 25px;
         color:rgb(9, 59, 124);
-        margin:2px;
+        margin: 0 5px 0 0;
         padding: 6px;
     }       
     .headerLogo{
