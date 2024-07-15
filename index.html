@@ -1,75 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./Home.css">
-    <link rel="icon" href="./Source/LOGO.png" type="png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
-    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>ADVENTURE</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swipe Navigation</title>
+  <link rel="stylesheet" href="./swipebacknav.css">
 </head>
 <body>
-    <section class="MainInterface_Sec01">
-        <header>
-            <div class="headerLogo">
-                <a href=""><img src="./Source/LOGO.png" alt="Logo"></a>
-            </div>
-            <nav id="Nav_row">
-                <ul class="nav_ul">
-                    <li><a href=""><i class="fa-solid fa-house"></i> &nbsp;&nbsp;Home</a></li>
-                    <li id="Dropdown_hover"><a href=""><i class="fa-solid fa-location-dot"></i> &nbsp;&nbsp;Places </i></a>
-                        <ul class="dropdown">
-                            <li><a href="">Country</a></li>
-                            <li><a href="">Places</a></li>
-                            <li><a href="">Country</a></li>
-                        </ul>
-                    </li>
-                    <li><a href=""><i class="fa-solid fa-question"></i> &nbsp;&nbsp;Who are we</a>
-                        <ul class="dropdown">
-                            <li><a href="">Contact Us</a></li>
-                            <li><a href="">About Us</a></li>
-                        </ul>
-                    </li>
-                    <li><a href=""><i class="fa-solid fa-right-to-bracket"></i> &nbsp;&nbsp;Loging</a></li>
-                </ul>
-            </nav>
-            <div class="header_control_icon">
-                <div class="header_icon_sub">
-                    <div class=" header_icon dark_icon">
-                        <i class="fa-solid fa-moon"></i>
-                    </div>
-                    <div class=" header_icon fv_icon">
-                        <i class="fa-solid fa-heart"></i>
-                    </div>
-                    <div class="header_icon Log_icon">
-                        <i class="fa-solid fa-user"></i>
-                    </div>
-                </div>
-                <div class="header_icon_Menu">
-                    <div class="menu_icon" id="Resp_menu">
-                        <i class="fa-solid fa-bars"></i>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <div class="containt">
-            <div class="texts">
-                <p id="www"></p>
-            </div>
-            <div class="img">
-                <img src="./Source/Home Bgpng" alt="sdf"> -
-            </div> 
-        </div>
-        
-
-    </section>
-    <section></section>
-    <section></section>
-    <script src="./script.js"></script>
-    <script>
-
-    </script>
+  <div id="nav-container">
+    <nav id="nav-menu">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div id="main-content">
+      <h1>Welcome to the site!</h1>
+      <p>Swipe left to open the navigation menu.</p>
+    </div>
+  </div>
+  <script src="./swipebacknav.js"></script>
 </body>
 </html>
