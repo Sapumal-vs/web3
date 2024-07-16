@@ -288,8 +288,6 @@ header{
         text-align: center;   
     }
  
-    
-
 
     
 /* Tab View */    
@@ -398,7 +396,7 @@ header{
         display: none;
     } 
     .MainInterface_Sec01 nav .nav_ul li{
-        margin: 30px;
+        margin: 35px;
     }
     /*01.01.3 NavIcon*/
     .header_icon-box{
@@ -452,15 +450,15 @@ header{
         transition: 1s;
         /* background-color: #107088; */
     }       
-    .header_icon_Menu .Responsive_icon_menu-Close{
-        position: relative;
-        display: none;
-        font-size: 35px;
-        top: 10px;
-        animation: Responsive_icon_menu-Close 3s ease-in-out;
-        animation-iteration-count: infinite;
-        padding: 0 14.5px 0 0px;
-    }
+        .header_icon_Menu .Responsive_icon_menu-Close{
+            position: relative;
+            display: none;
+            font-size: 35px;
+            top: 10px;
+            animation: Responsive_icon_menu-Close 3s ease-in-out;
+            animation-iteration-count: infinite;
+            padding: 0 14.5px 0 0px;
+        }
     @keyframes Responsive_icon_menu-Close {
         0%{
             color: red;
@@ -481,14 +479,9 @@ header{
         transition: 1s;
         top: 0px;
     } 
-    .Responsive_icon_menu_active .Responsive_icon_menu-Opne{
-        display: none;
-    }
-
-
-
-
-
+        .Responsive_icon_menu_active .Responsive_icon_menu-Opne{
+            display: none;
+        }
 }
 
 
