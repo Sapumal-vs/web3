@@ -1,14 +1,14 @@
-// var Resp_menu_js = document.getElementById('Resp_menu');
+// var Responsive_icon_menu_active = document.getElementById('Responsive_icon-menu');
 // var Resp_nav_js = document.getElementById('Nav');
-//     Resp_menu_js.addEventListener('click', function(){
+//     Responsive_icon_menu_active.addEventListener('click', function(){
 //         Resp_nav_js.classList.toggle('Nav_Move');
 //     })
 
-var Resp_menu_js = document.getElementById('Resp_menu');
 var responsivenave = document.getElementsByTagName('nav')[0];
-Resp_menu_js.addEventListener('click', function(){
-    Resp_menu_js.classList.toggle('Nav_Move');
-    responsivenave.classList.toggle('responsive_nave');
+var Responsive_icon_menu = document.getElementById('Responsive_icon-menu');
+Responsive_icon_menu.addEventListener('click', function(){
+    responsivenave.classList.toggle('responsive_nav_active');
+    Responsive_icon_menu.classList.toggle('Responsive_icon_menu_active');
     })
    
 
