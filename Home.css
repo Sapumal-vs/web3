@@ -381,7 +381,7 @@ footer{
         text-decoration:wavy;
         margin-bottom: 5px;
         padding-bottom: 5px;
-        color: #ffffffe3;
+        color: #ffffff;
         font-size: 13px;
         /* background-color: #107088; */
         font-family:Arial, Helvetica, sans-serif;
@@ -404,7 +404,7 @@ footer{
             display: inline-block;  
         }
         .footer_socialmedia ul li i{
-              color: rgb(7, 77, 107);
+              color: rgb(8, 174, 245);
               font-size: 15px;
               padding: 3px;
         }
